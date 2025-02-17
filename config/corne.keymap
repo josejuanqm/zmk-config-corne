@@ -30,7 +30,18 @@
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <100>;
             quick-tap-ms = <200>;
-            hold-trigger-key-positions = <13 14 15 16 19 20 21 22>;
+            hold-trigger-key-positions = <19 21 20 22>;
+        };
+
+        ht_b: ht_b {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_B";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
         };
     };
 
@@ -45,10 +56,10 @@
             //                    | GUI | LWR | ENT |   | SPC | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp Q                   &kp W               &kp E               &kp R                 &kp T      &kp Y          &kp U                  &kp I                &kp O                &kp P                     &kp BSPC
-&kp ESCAPE  &lh_pht LEFT_CONTROL A  &lh_pht LEFT_ALT S  &lh_pht LEFT_GUI D  &lh_pht LEFT_SHIFT F  &kp G      &kp H          &lh_pht RIGHT_SHIFT J  &lh_pht RIGHT_GUI K  &lh_pht RIGHT_ALT L  &lh_pht RIGHT_SHIFT SEMI  &kp SQT
-&kp LSHFT   &kp Z                   &kp X               &kp C               &kp V                 &kp B      &kp N          &kp M                  &kp COMMA            &kp DOT              &kp FSLH                  &xcode_open
-                                                        &lt 3 ESCAPE        &lt 1 SPACE           &kp RET    &kp BACKSPACE  &lt 2 SPACE            &mo 4
+&kp TAB     &kp Q                 &kp W             &kp E             &kp R               &kp T      &kp Y          &kp U                &kp I              &kp O              &kp P                   &kp BSPC
+&kp ESCAPE  &ht_b LEFT_CONTROL A  &ht_b LEFT_ALT S  &ht_b LEFT_GUI D  &ht_b LEFT_SHIFT F  &kp G      &kp H          &ht_b RIGHT_SHIFT J  &ht_b RIGHT_GUI K  &ht_b RIGHT_ALT L  &ht_b RIGHT_SHIFT SEMI  &kp SQT
+&kp LSHFT   &kp Z                 &kp X             &kp C             &kp V               &kp B      &kp N          &kp M                &kp COMMA          &kp DOT            &kp FSLH                &xcode_open
+                                                    &lt 3 ESCAPE      &lt 1 SPACE         &kp RET    &kp BACKSPACE  &lt 2 SPACE          &mo 4
             >;
         };
 
