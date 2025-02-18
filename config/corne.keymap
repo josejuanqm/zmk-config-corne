@@ -58,9 +58,9 @@
             //                    | GUI | LWR | ENT |   | SPC | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp Q                 &kp W             &kp E             &kp R               &kp T      &kp Y          &kp U                &kp I              &kp O              &kp P                   &kp BSPC
-&kp ESCAPE  &ht_b LEFT_CONTROL A  &ht_b LEFT_ALT S  &ht_b LEFT_GUI D  &ht_b LEFT_SHIFT F  &kp G      &kp H          &ht_b RIGHT_SHIFT J  &ht_b RIGHT_GUI K  &ht_b RIGHT_ALT L  &ht_b RIGHT_SHIFT SEMI  &kp SQT
-&kp LSHFT   &kp Z                 &kp X             &kp C             &kp V               &kp B      &kp N          &kp M                &kp COMMA          &kp DOT            &kp FSLH                &xcode_open
+&kp TAB     &kp Q                 &kp W             &kp E             &kp R               &kp T      &kp Y          &kp U                &kp I              &kp O              &kp P                     &kp BSPC
+&kp ESCAPE  &ht_b LEFT_CONTROL A  &ht_b LEFT_ALT S  &ht_b LEFT_GUI D  &ht_b LEFT_SHIFT F  &kp G      &kp H          &ht_b RIGHT_SHIFT J  &ht_b RIGHT_GUI K  &ht_b RIGHT_ALT L  &ht_b RIGHT_CONTROL SEMI  &kp SQT
+&kp LSHFT   &kp Z                 &kp X             &kp C             &kp V               &kp B      &kp N          &kp M                &kp COMMA          &kp DOT            &kp FSLH                  &xcode_open
                                                     &lt 3 ESCAPE      &lt 1 SPACE         &kp RET    &kp BACKSPACE  &lt 2 SPACE          &mo 4
             >;
         };
